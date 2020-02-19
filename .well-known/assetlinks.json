@@ -1,5 +1,5 @@
-{
+[{
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target" : { "namespace": "android_app", "package_name": "com.raykite.mobile",
                "sha256_cert_fingerprints": ["F0:D4:39:31:8C:0A:5E:4F:01:96:AF:AE:AA:81:64:38:6B:34:F9:8B:C9:A6:D4:24:67:A4:93:D5:FE:BF:A5:94"] }
-}
+}]
