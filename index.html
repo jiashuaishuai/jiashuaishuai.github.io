@@ -35,8 +35,6 @@
       scheme: {
         protocol: 'raydata',
         host: 'com.raykite.mobile',
-         path: 'project_info',
-         param:{code:'6EtK2s5z',type:'detail'},
       },
       
       appstore: 'https://itunes.apple.com/cn/app/id1383186862',
@@ -49,7 +47,8 @@
 
     callButton.addEventListener('click', () => {
       lib.open({
-       
+        path: 'project_info',
+         param:{code:'6EtK2s5z',type:'detail'},
        
       });
     });
