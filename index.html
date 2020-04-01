@@ -27,7 +27,7 @@
   </style>
 <script async src='/cdn-cgi/bm/cv/2172558837/api.js'></script></head>
 <body>
-  <div id='call-button'>点击唤起RayData App  update12个人页</div>
+  <div id='call-button'>点击唤起RayData App  update13个人页</div>
 
   <script src='https://unpkg.com/callapp-lib@2.1.7/dist/index.umd.js'></script>
   <script>
@@ -35,6 +35,8 @@
       scheme: {
         protocol: 'raydata',
         host: 'com.raykite.mobile',
+         path: 'project_info',
+         param:{code:'6EtK2s5z',type:'detail'},
       },
       
       appstore: 'https://itunes.apple.com/cn/app/id1383186862',
@@ -47,8 +49,8 @@
 
     callButton.addEventListener('click', () => {
       lib.open({
-        path: 'project_info',
-        param:{code:'6EtK2s5z',type:'detail'},
+       
+       
       });
     });
 
@@ -57,7 +59,7 @@
     // outChain 很少有同学会使用到，所以更方便大家理解
 
     // ykshortvideo://profile 
-    console.log(lib.generateScheme({path: 'project_info'}));
+//     console.log(lib.generateScheme({path: 'project_info'}));
 //     // intent://profile#Intent;package=com.youku.shortvideo;scheme=ykshortvideo;S.browser_fallback_url=https%3A%2F%2Fdianliu.youku.com%2Fservice%2Fdownload;end;
 //     console.log(lib.generateIntent({path: 'profile'}));
 //     // https://flash-link.youku.com?action=profile
