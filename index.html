@@ -27,7 +27,7 @@
   </style>
 <script async src='/cdn-cgi/bm/cv/2172558837/api.js'></script></head>
 <body>
-  <div id='call-button'>点击唤起RayData App  update9个人页</div>
+  <div id='call-button'>点击唤起RayData App  update10个人页</div>
 
   <script src='https://unpkg.com/callapp-lib@2.1.7/dist/index.umd.js'></script>
   <script>
@@ -49,7 +49,7 @@
 
     callButton.addEventListener('click', () => {
       lib.open({
-        path: 'profile',
+        path: 'project_info',
       });
     });
 
@@ -58,7 +58,7 @@
     // outChain 很少有同学会使用到，所以更方便大家理解
 
     // ykshortvideo://profile 
-    console.log(lib.generateScheme());
+    console.log(lib.generateScheme({path: 'project_info'}));
 //     // intent://profile#Intent;package=com.youku.shortvideo;scheme=ykshortvideo;S.browser_fallback_url=https%3A%2F%2Fdianliu.youku.com%2Fservice%2Fdownload;end;
 //     console.log(lib.generateIntent({path: 'profile'}));
 //     // https://flash-link.youku.com?action=profile
